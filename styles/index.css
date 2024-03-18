@@ -2,6 +2,14 @@
 	--minor-color: #6E6E6E;
 }
 
+/*
+-webkit-animation: @value;
+-moz-animation:    @value;
+-o-animation:      @value;
+-ms-transition:    @value;
+animation:         @value;
+*/
+
 .main-content {
 	margin: 3vw;
 }
@@ -50,11 +58,17 @@
 .gradient {
 	background: linear-gradient(-45deg, #9d66d0, #66aed0, #f7d19c, #ebab51);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	-webkit-animation: gradient 15s ease infinite;
+	-moz-animation:    gradient 15s ease infinite;
+	-o-animation:      gradient 15s ease infinite;
+	-ms-transition:    gradient 15s ease infinite;
+	animation:         gradient 15s ease infinite;
 
 	background-clip: text;
 	-webkit-background-clip: text;
     -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
 	color: transparent;
 }
 
@@ -93,18 +107,34 @@
 	2% {
 		opacity: 1;
 		transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	50% {
 		opacity: 1;
 		transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	51% {
 		opacity: 0;
 		transform: translateY(50%);
+		-ms-transform: translateY(50%);
+		-o-transform: translateY(50%);
+		-moz-transform: translateY(50%);
+		-webkit-transform: translateY(50%);
 	}
 	52% {
 		opacity: 0;
 		transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
 	}
 	100% {
 		opacity: 0;
@@ -118,18 +148,34 @@
 	1% {
 		opacity: 0;
 		transform: translateY(50%);
+		-ms-transform: translateY(50%);
+		-o-transform: translateY(50%);
+		-moz-transform: translateY(50%);
+		-webkit-transform: translateY(50%);
 	}
 	2% {
 		opacity: 0;
 		transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	50% {
 		opacity: 0;
 		transform: translateY(100%);
+		-ms-transform: translateY(100%);
+		-o-transform: translateY(100%);
+		-moz-transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	52% {
 		opacity: 1;
 		transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
 	}
 	100% {
 		opacity: 1;
@@ -157,11 +203,16 @@
 	background-clip: text;
 	-webkit-background-clip: text;
     -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
 	color: transparent;
 
 
 	animation: text-scroll-For 10s linear infinite, gradient-2 15s ease infinite;
-
+	-webkit-animation: text-scroll-For 10s linear infinite, gradient-2 15s ease infinite;
+	-moz-animation: text-scroll-For 10s linear infinite, gradient-2 15s ease infinite;
+	-o-animation: text-scroll-For 10s linear infinite, gradient-2 15s ease infinite;
+	-ms-transition: text-scroll-For 10s linear infinite, gradient-2 15s ease infinite;
 }
 
 #scroll::after {
@@ -178,10 +229,15 @@
 	background-clip: text;
 	-webkit-background-clip: text;
     -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
 	color: transparent;
 
 	animation: text-scroll-By 10s linear infinite, gradient-2 15s ease infinite;
-
+	-webkit-animation: text-scroll-By 10s linear infinite, gradient-2 15s ease infinite;
+	-moz-animation: text-scroll-By 10s linear infinite, gradient-2 15s ease infinite;
+	-o-animation: text-scroll-By 10s linear infinite, gradient-2 15s ease infinite;
+	-ms-transition: text-scroll-By 10s linear infinite, gradient-2 15s ease infinite;
 }
 
 .spec {
@@ -257,6 +313,10 @@
 
 .panel:hover {
 	transform: perspective(1500px) rotateY(var(--y-angle)) rotateX(var(--x-angle));
+	-ms-transform: perspective(1500px) rotateY(var(--y-angle)) rotateX(var(--x-angle));
+	-webkit-transform: perspective(1500px) rotateY(var(--y-angle)) rotateX(var(--x-angle));
+	-o-transform: perspective(1500px) rotateY(var(--y-angle)) rotateX(var(--x-angle));
+	-moz-transform: perspective(1500px) rotateY(var(--y-angle)) rotateX(var(--x-angle));
 }
 
 .panel-info {
