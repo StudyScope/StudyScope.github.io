@@ -8,6 +8,8 @@ function squish(value, in_min, in_max, out_min, out_max) {
 }
 
 function scrollToPrograms() {
+  document.getElementsByTagName('body')[0].style.overflowY = "visible";
+  hamburger();
   document.getElementById("programs").scrollIntoView({
       behavior: 'smooth'
   });

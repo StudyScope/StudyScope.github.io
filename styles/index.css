@@ -254,10 +254,13 @@ animation:         @value;
 
 .spec-wrapper {
 	margin-top: 2vh;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin-left: 20vw;
-	margin-right: 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.spec-space {
+	width: 3rem;
 }
 
 .spec-subject {
@@ -300,15 +303,18 @@ animation:         @value;
 }
 
 .panel {
+	position: relative;
+
 	display: grid;
 	grid-template-rows: 1fr 4fr;
 	border: 1px solid #e6e6e6;
 	margin: 30px;
 	border-radius: 20px;
-	height: 80vh;
-	width: 25vw;
 	box-shadow: 0px 5px 25px 8px rgba(0, 0, 0, 0.2);
 	transition-duration: .3s;
+	display: block;
+	overflow: auto;
+	
 }
 
 .panel:hover {
@@ -320,10 +326,10 @@ animation:         @value;
 }
 
 .panel-info {
+
 	padding: 15px;
 	padding-top: 10px;
 	/*border-top: 1px solid #e6e6e6;*/
-	position: relative;
 }
 
 .panel-title {
@@ -352,6 +358,10 @@ animation:         @value;
 .orange { background-color: #f0c769; }
 .red { background-color: #f07769; }
 
+.register-space {
+	height: 8vh;
+}
+
 .panel-register {
 	position: absolute;
 	bottom: 15px;
@@ -367,13 +377,12 @@ animation:         @value;
 	width: 70px;
 	font-size: 100%;
 	cursor: pointer;
-	stick: bottom;
+	margin-left: 15px;
 }
 
 .disable {
 	background-color: #adadad;
 	cursor: not-allowed;
-
 }
 
 .panel-description {
@@ -445,3 +454,67 @@ animation:         @value;
 	cursor: pointer;
 }
 
+.panel-price {
+	margin-top: 0px;
+	font-size: 100%;
+}
+
+
+@media screen and (max-width:900px) {
+	.panels {
+	    display: grid;
+		grid-template-columns: 1fr;
+		margin: auto;
+	}
+	.panel-info {
+		padding: 30px;
+		padding-top: 20px;
+		/*border-top: 1px solid #e6e6e6;*/
+	}
+	.panel-title {
+		font-family: inter-semibold;
+		font-size: 250%;
+	}
+	.panel-tags {
+		padding-top: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 200%;
+	}
+	.panel-tag {
+		padding: 5px;
+		margin: 10px;
+		margin-left: 0;
+		font-family: monospace;
+		border-radius: 5px;
+	}
+	.panel-price {
+		margin-top: 5px;
+		font-size: 200%;
+	}
+	.panel-description {
+		margin-top: 15px;
+		font-size: 200%;
+	}
+	.panel-register {
+		position: absolute;
+		bottom: 30px;
+		font-family: inter;
+		background-color: var(--nav-reg-color);
+		color: white;
+		padding: 15px 25px 15px 25px;
+		border-radius: 100px;
+		margin: 0;
+		transition-duration: .3s;
+		margin-top: 3vh;
+		text-align: center;
+		width: 140px;
+		font-size: 200%;
+		cursor: pointer;
+		margin-left: 30px;
+	}
+	.disable {
+		background-color: #adadad;
+		cursor: not-allowed;
+	}
+}

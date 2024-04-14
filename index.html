@@ -2,15 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=0.7">
 		<title>StudyScope | Home</title>
 		<link rel="shortcut icon" href="assets/images/logo.ico" />
 
 		<link rel="stylesheet" type="text/css" href="styles/nav.css">
 		<link rel="stylesheet" type="text/css" href="styles/index.css">
+		<link rel="stylesheet" type="text/css" href="styles/hamburgers.css">
 	</head>
+
 	<body>
 		<script src="scripts/index.js"></script>
+		<script src="scripts/nav.js"></script>
+
+
 
 		<div class="nav">
 			<div class="logo-wrap">
@@ -22,7 +27,19 @@
 				</a>
 			</div>
 
-			<div class="nav-buttons">
+			<div id="hamburger-container">
+				<div></div>
+				<button class="hamburger hamburger--slider" id="hamburger" type="button" onclick="hamburger()">
+				  <span class="hamburger-box">
+				    <span class="hamburger-inner"></span>
+				  </span>
+				</button>
+			</div>
+
+
+			
+
+			<div class="nav-buttons" id="nav-buttons">
 				<div class="nav-buttons-container">
 					<a class="nav-button hover-underline-animation" onclick="scrollToPrograms()">
 						Programs
@@ -40,12 +57,45 @@
 				</div>
 			</div>
 
-			<div class="nav-register">
+			<div class="nav-register" id="nav-register">
 				<a class="nav-button register" href="javascript:document.write('this needs to redirect to the registering service')">
 					Register
 				</a>
 			</div>
 		</div>
+
+		<div id="mobile-nav-buttons">
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" onclick="scrollToPrograms()">
+					Programs
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/apply">
+					Join Our Team
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/contact">
+					Contact
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/company">
+					Company
+				</a>
+			</div>
+			<div class="mobile-nav-button-container">
+				<a class="mobile-nav-button" href="http://studyscopetutoring.com/company">
+					Register
+				</a>
+			</div>
+			<div class="mobile-nav-space">
+
+			</div>
+		</div>
+
+		
 
 
 		<div class="main-content">
@@ -76,14 +126,17 @@
 						<img class="spec-logo" src="assets/images/math.svg" alt="Math Icon">
 						<span class="spec-description">Math</span>
 					</div>
+					<div class="spec-space"></div>
 					<div class="spec-subject">
 						<img class="spec-logo" src="assets/images/english.svg" alt="English Icon">
 						<span class="spec-description">English</span>
 					</div>
+					<div class="spec-space"></div>
 					<div class="spec-subject">
 						<img class="spec-logo" src="assets/images/science.svg" alt="Science Icon">
 						<span class="spec-description">Science</span>
 					</div>
+					<div class="spec-space"></div>
 					<div class="spec-subject">
 						<img class="spec-logo" src="assets/images/french.svg" alt="French Icon">
 						<span class="spec-description">French</span>
@@ -126,9 +179,12 @@
 									✓ EQAO & SSAT test prep (coming soon)<br>
 								</div>
 							</div>
-							<div class='panel-register'>
-								<a href="javascript:document.write('this needs to redirect to the registering service')">Register</a>
-							</div>
+						</div>
+						<div class="register-space">
+
+						</div>
+						<div class='panel-register'>
+							<a href="javascript:document.write('this needs to redirect to the registering service')">Register</a>
 						</div>
 					</div>
 
@@ -159,9 +215,12 @@
 									✓ Individual catering<br>
 								</div>
 							</div>
-							<div class='panel-register'>
-								<a href="javascript:document.write('this needs to redirect to the registering service')">Register</a>
-							</div>
+						</div>
+						<div class="register-space">
+
+						</div>
+						<div class='panel-register'>
+							<a href="javascript:document.write('this needs to redirect to the registering service')">Register</a>
 						</div>
 					</div>
 
@@ -191,9 +250,12 @@
 									✓ TOEFL prep (coming soon)<br>
 								</div>
 							</div>
-							<div class='panel-register disable'>
-								<a class="disable">Register</a>
-							</div>
+						</div>
+						<div class="register-space">
+
+						</div>
+						<div class='panel-register disable'>
+							<a class="disable">Register</a>
 						</div>
 					</div>
 				</div>
