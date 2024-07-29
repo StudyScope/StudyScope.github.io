@@ -347,9 +347,11 @@ animation:         @value;
 	padding: 5px;
 	margin: 5px;
 	margin-left: 0;
-	font-family: monospace;
+	/*font-family: monospace;*/
+	font-size: 80%;
 	background-color: lime;
 	border-radius: 5px;
+	color: white;
 }
 
 .green { background-color: #60db85; }
