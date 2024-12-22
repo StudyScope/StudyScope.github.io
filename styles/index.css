@@ -468,6 +468,9 @@ animation:         @value;
 		grid-template-columns: 1fr;
 		margin: auto;
 	}
+	.panel {
+		grid-template-rows: 1fr 5fr;
+	}
 	.panel-info {
 		padding: 30px;
 		padding-top: 20px;
@@ -520,6 +523,7 @@ animation:         @value;
 		cursor: not-allowed;
 	}
 	#scroll::before {
+		content: 'By';
 		animation: none;
 		-webkit-animation: none;
 		-moz-animation: none;
