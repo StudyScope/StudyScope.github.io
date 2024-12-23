@@ -533,5 +533,12 @@ animation:         @value;
 	}
 	#scroll::after {
 		content: '';
+		animation: none;
+		-webkit-animation: none;
+		-moz-animation: none;
+		-o-animation: none;
+		-ms-transition: none;
+		opacity: 0;
+		color: white;
 	}
 }
