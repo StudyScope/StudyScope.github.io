@@ -183,11 +183,13 @@ animation:         @value;
 }
 
 #scroll {
+	content: '';
 	overflow: hidden;
 	position: relative;
 	left: 0;
 	top:0;
 	color: transparent;
+	opacity: 1;
 }
 
 #scroll::before {
@@ -196,6 +198,7 @@ animation:         @value;
 	top: 0;
 	left: 0;
 	color: #222;
+	opacity: 1;
 
 	background: linear-gradient(-45deg, #9d66d0, #66aed0, #f7d19c, #ebab51);
 	background-size: 400% 400%;
@@ -276,7 +279,6 @@ animation:         @value;
 .spec-description {
 	padding-left: 6px;
 }
-
 
 #programs {
 	margin-top: 5vh;
